@@ -1,3 +1,4 @@
+@import url('http://tantek.com/log/2004/undohtml.css');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
 $primaryColor: #03A9F4;
@@ -8,6 +9,31 @@ body {
     //Poppins para texto normal
     font-family: 'Poppins', sans-serif;
     color: #212121;
+}
+
+// https://shapeshed.com/default-styles-for-css/
+h1 { 
+    font-size: 2.2em; 
+} 
+     
+h2 { 
+    font-size: 2.0em;     
+} 
+     
+h3 { 
+    font-size: 1.8em; 
+} 
+     
+h4 { 
+    font-size: 1.6em;     
+} 
+     
+h5 { 
+    font-size: 1.4em;     
+} 
+     
+p { 
+    font-size: 1.2em;     
 }
 
 // Titles in Bebas Neue
