@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+$primaryColor: #03A9F4;
+
+body {
+    //Fondo por default
+    background-color: #E1F5FE;
+    //Poppins para texto normal
+    font-family: 'Poppins', sans-serif;
+    color: #212121;
+}
+
+// Titles in Bebas Neue
+h1, h2, h3, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+    color: $primaryColor;
+}
+
+.nav {
+    height: 16rem;
+}
+
+#navButton {
+    visibility: hidden;
+}
