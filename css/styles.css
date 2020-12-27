@@ -19,6 +19,14 @@ h1, h2, h3, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.nav > a {
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
 #navButton {
   visibility: hidden;
 }
