@@ -1,0 +1,49 @@
+#beacon {
+  color: #C5CAE9;
+  background-color: #1A237E;
+}
+#beacon h1, #beacon h2, #beacon h3, #beacon h4, #beacon h5, #beacon h6 {
+  color: #C5CAE9;
+}
+
+#chesslocker {
+  background-color: #5D4037;
+  color: #D7CCC8;
+}
+#chesslocker h1, #chesslocker h2, #chesslocker h3, #chesslocker h4, #chesslocker h5, #chesslocker h6 {
+  color: #D7CCC8;
+}
+
+#orange {
+  background-color: #FF7043;
+  color: #212121;
+}
+#orange h1, #orange h2, #orange h3, #orange h4, #orange h5, #orange h6 {
+  color: #212121;
+}
+
+#help {
+  background-color: #F06292;
+  color: #212121;
+}
+#help h1, #help h2, #help h3, #help h4, #help h5, #help h6 {
+  color: #212121;
+}
+
+#quicklauncher {
+  background-color: #009688;
+  color: white;
+}
+#quicklauncher h1, #quicklauncher h2, #quicklauncher h3, #quicklauncher h4, #quicklauncher h5, #quicklauncher h6 {
+  color: white;
+}
+
+#medmember {
+  background-color: #42A5F5;
+  color: white;
+}
+#medmember h1, #medmember h2, #medmember h3, #medmember h4, #medmember h5, #medmember h6 {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
