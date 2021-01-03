@@ -54,6 +54,24 @@ h1, h2, h3, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.nav > a:hover {
+  background: #03A9F4;
+  animation: buttonColor 0.5s ease;
+}
+
+@keyframes buttonColor {
+  0% {
+    background-color: #00000000;
+  }
+  100% {
+    background-color: #03A9F4;
+  }
+}
+.nav > a:active {
+  background: white;
+  color: #03A9F4;
+}
+
 @media only screen and (max-width: 600px) {
   .nav {
     height: auto;
@@ -78,7 +96,7 @@ h1, h2, h3, h3, h4, h5, h6 {
 }
 
 .card {
-  padding: 1rem;
+  padding: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px;
   margin: 32px;
@@ -96,6 +114,15 @@ h1, h2, h3, h3, h4, h5, h6 {
 
 #megaTitle {
   font-size: 4rem;
+}
+
+.button {
+  padding: 16px;
+  background-color: #03A9F4;
+  color: #E1F5FE !important;
+  border-radius: 2px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
