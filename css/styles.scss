@@ -42,6 +42,12 @@ h1, h2, h3, h3, h4, h5, h6 {
     color: $primaryColor;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .nav {
     height: 4rem;
     background-color: #263238;
