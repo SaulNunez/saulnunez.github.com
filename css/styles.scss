@@ -1,11 +1,11 @@
 @import url('http://tantek.com/log/2004/undohtml.css');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
-$primaryColor: #03A9F4;
+$primaryColor: #3a83ff;
 
 body {
     //Fondo por default
-    background-color: #E1F5FE;
+    background-color: white;
     //Poppins para texto normal
     font-family: 'Poppins', sans-serif;
     color: #212121;
@@ -50,7 +50,7 @@ img {
 
 .nav {
     height: 4rem;
-    background-color: #263238;
+    background-color: #e8eff7;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -59,7 +59,7 @@ img {
 
 .nav > a {
     border-radius: 2px;
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0.25rem;
     padding: 0.25rem;
