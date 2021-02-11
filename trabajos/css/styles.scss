@@ -5,6 +5,13 @@
     h1, h2, h3, h4, h5, h6 {
         color: #C5CAE9;
     }
+
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 #chesslocker {
@@ -49,5 +56,13 @@
 
     h1, h2, h3, h4, h5, h6 {
         color: white;
+    }
+}
+
+.play_button {
+    display: block;
+
+    img {
+        width: 256px;
     }
 }

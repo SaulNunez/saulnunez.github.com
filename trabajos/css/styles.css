@@ -5,6 +5,12 @@
 #beacon h1, #beacon h2, #beacon h3, #beacon h4, #beacon h5, #beacon h6 {
   color: #C5CAE9;
 }
+#beacon img {
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 
 #chesslocker {
   background-color: #5D4037;
@@ -44,6 +50,13 @@
 }
 #medmember h1, #medmember h2, #medmember h3, #medmember h4, #medmember h5, #medmember h6 {
   color: white;
+}
+
+.play_button {
+  display: block;
+}
+.play_button img {
+  width: 256px;
 }
 
 /*# sourceMappingURL=styles.css.map */
