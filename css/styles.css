@@ -139,6 +139,7 @@ img {
 .center_flex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pill {
@@ -153,6 +154,7 @@ img {
   border: 1px solid gray;
   white-space: nowrap;
   text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
