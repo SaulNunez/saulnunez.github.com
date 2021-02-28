@@ -144,3 +144,22 @@ img {
 .mega {
     font-size: 6rem;
 }
+
+.center_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.pill {
+    display: inline-block;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 16px;
+    background-color: white;
+    margin: 4px;
+    padding:4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid gray;
+    white-space: nowrap;
+    text-decoration: none;
+}
