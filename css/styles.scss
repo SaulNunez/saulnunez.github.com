@@ -55,22 +55,30 @@ img {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    
+    & > a {
+        border-radius: 2px;
+        color: black;
+        text-decoration: none;
+        margin: 0.25rem;
+        padding: 0.25rem;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    & > a:hover {
+        background: $primaryColor;
+        animation: buttonColor 0.5s ease;
+        color:white;
+    }
+
+    & > a:active {
+        background: white;
+        color: $primaryColor;
+    }
 }
 
-.nav > a {
-    border-radius: 2px;
-    color: black;
-    text-decoration: none;
-    margin: 0.25rem;
-    padding: 0.25rem;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.nav > a:hover {
-    background: $primaryColor;
-    animation: buttonColor 0.5s ease;
-}
 
 @keyframes buttonColor {
     0% {
@@ -81,11 +89,6 @@ img {
     }
   }
 
-.nav > a:active {
-    background: white;
-    color: $primaryColor;
-}
-
 @media only screen and (max-width: 600px){
     .nav {
         height: auto;
@@ -94,15 +97,15 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-    }
-    
-    .nav > a {
-        border-radius: 2px;
-        color: black;
-        text-decoration: none;
-        margin: 0.25rem;
-        padding: 0.25rem;
-        white-space: nowrap; 
+
+        & > a {
+            border-radius: 2px;
+            color: black;
+            text-decoration: none;
+            margin: 0.25rem;
+            padding: 0.25rem;
+            white-space: nowrap; 
+        }
     }
 }
 
@@ -164,4 +167,15 @@ img {
     white-space: nowrap;
     text-decoration: none;
     color:black;
+
+    &:hover {
+        background: $primaryColor;
+        animation: buttonColor 0.5s ease;
+        color: white;
+    }
+
+    &:active {
+        background: white;
+        color: $primaryColor;
+    }
 }
