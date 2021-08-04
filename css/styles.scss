@@ -179,3 +179,15 @@ img {
         color: $primaryColor;
     }
 }
+
+.jumbotron {
+    background-color: $primaryColor;
+    color: white;
+    padding-bottom: 4em;
+    padding-top: 8em;
+
+    h1, h2, h3, h3, h4, h5, h6 {
+        color: white;
+    }
+    
+}
