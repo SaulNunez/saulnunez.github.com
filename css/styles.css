@@ -39,6 +39,7 @@ img {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  max-height: 15cm;
 }
 
 .nav {
@@ -124,6 +125,7 @@ img {
   padding: 16px;
   background-color: #3a83ff;
   color: #E1F5FE !important;
+  border-radius: 16px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
