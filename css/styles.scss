@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
 $primaryColor: #3a83ff;
+$deepPrimary: #1b0883;
+$secondaryColor: #de55ff;
 
 body {
     //Fondo por default
@@ -50,7 +52,7 @@ img {
 
 .nav {
     height: 4rem;
-    background-color: #e8eff7;
+    background-color: $deepPrimary;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -59,7 +61,7 @@ img {
     
     & > a {
         border-radius: 2px;
-        color: black;
+        color: white;
         text-decoration: none;
         margin: 0.25rem;
         padding: 0.25rem;
@@ -68,21 +70,21 @@ img {
     }
 
     & > a:hover {
-        background: $primaryColor;
-        animation: buttonColor 0.5s ease;
+        background: $secondaryColor;
+        animation: buttonColor 0.1s ease;
         color:white;
     }
 
     & > a:active {
         background: white;
-        color: $primaryColor;
+        color: $secondaryColor;
     }
 }
 
 
 @keyframes buttonColor {
     0% {
-      background-color: #00000000;
+      background-color: transparent;
     }
     100% {
       background-color: $primaryColor;
@@ -92,7 +94,7 @@ img {
 @media only screen and (max-width: 600px){
     .nav {
         height: auto;
-        background-color: #e8eff7;
+        background-color: $primaryColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -181,7 +183,7 @@ img {
 }
 
 .jumbotron {
-    background-color: $primaryColor;
+    background-color: $deepPrimary;
     color: white;
     padding-bottom: 4em;
     padding-top: 8em;

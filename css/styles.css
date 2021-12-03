@@ -43,7 +43,7 @@ img {
 
 .nav {
   height: 4rem;
-  background-color: #e8eff7;
+  background-color: #1b0883;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -51,7 +51,7 @@ img {
 }
 .nav > a {
   border-radius: 2px;
-  color: black;
+  color: white;
   text-decoration: none;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -59,18 +59,18 @@ img {
   text-align: center;
 }
 .nav > a:hover {
-  background: #3a83ff;
-  animation: buttonColor 0.5s ease;
+  background: #de55ff;
+  animation: buttonColor 0.1s ease;
   color: white;
 }
 .nav > a:active {
   background: white;
-  color: #3a83ff;
+  color: #de55ff;
 }
 
 @keyframes buttonColor {
   0% {
-    background-color: #00000000;
+    background-color: transparent;
   }
   100% {
     background-color: #3a83ff;
@@ -79,7 +79,7 @@ img {
 @media only screen and (max-width: 600px) {
   .nav {
     height: auto;
-    background-color: #e8eff7;
+    background-color: #3a83ff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +124,6 @@ img {
   padding: 16px;
   background-color: #3a83ff;
   color: #E1F5FE !important;
-  border-radius: 16px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -164,7 +163,7 @@ img {
 }
 
 .jumbotron {
-  background-color: #3a83ff;
+  background-color: #1b0883;
   color: white;
   padding-bottom: 4em;
   padding-top: 8em;
