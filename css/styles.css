@@ -1,5 +1,48 @@
-@import url("http://tantek.com/log/2004/undohtml.css");
+/* undohtml.css */
+/* (CC) 2004 Tantek Celik. Some Rights Reserved.             */
+/*   http://creativecommons.org/licenses/by/2.0                   */
+/* This style sheet is licensed under a Creative Commons License. */
+/* Purpose: undo some of the default styling of common (X)HTML browsers */
+/* link underlines tend to make hypertext less readable, 
+   because underlines obscure the shapes of the lower halves of words */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+:link, :visited {
+  text-decoration: none;
+}
+
+/* no list-markers by default, since lists are used more often for semantics */
+ul, ol {
+  list-style: none;
+}
+
+/* avoid browser default inconsistent heading font-sizes */
+/* and pre/code too */
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+
+/* remove the inconsistent (among browsers) default ul,ol padding or margin  */
+/* the default spacing on headings does not match nor align with 
+   normal interline spacing at all, so let's get rid of it. */
+/* zero out the spacing around pre, form, body, html, p, blockquote as well */
+/* form elements are oddly inconsistent, and not quite CSS emulatable. */
+/*  nonetheless strip their margin and padding as well */
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0;
+  padding: 0;
+}
+
+/* whoever thought blue linked image borders were a good idea? */
+a img, :link img, :visited img {
+  border: none;
+}
+
+/* de-italicize address */
+address {
+  font-style: normal;
+}
+
+/* more varnish stripping as necessary... */
 body {
   background-color: white;
   font-family: "Poppins", sans-serif;
@@ -31,10 +74,12 @@ p {
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
-  font-family: "Bebas Neue", cursive;
-  color: #3a83ff;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  color: #003aff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
 }
 
 img {
@@ -62,13 +107,13 @@ img {
   text-align: center;
 }
 .nav > a:hover {
-  background: #de55ff;
+  background: #ffc500;
   animation: buttonColor 0.1s ease;
   color: white;
 }
 .nav > a:active {
   background: white;
-  color: #de55ff;
+  color: #ffc500;
 }
 
 @keyframes buttonColor {
@@ -76,13 +121,13 @@ img {
     background-color: transparent;
   }
   100% {
-    background-color: #3a83ff;
+    background-color: #003aff;
   }
 }
 @media only screen and (max-width: 600px) {
   .nav {
     height: auto;
-    background-color: #3a83ff;
+    background-color: #003aff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,19 +162,27 @@ img {
   max-width: 800px;
   margin: auto;
 }
+.content p {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.content a {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
 
 #megaTitle {
   font-size: 4rem;
 }
 
 .button {
-  display: inline-block;
-  padding: 16px;
-  background-color: #3a83ff;
-  color: #E1F5FE !important;
-  border-radius: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  background-color: #ffc500;
+  color: black;
+  border: 4px solid black;
 }
 
 .mega {
@@ -157,13 +210,13 @@ img {
   color: black;
 }
 .pill:hover {
-  background: #3a83ff;
+  background: #003aff;
   animation: buttonColor 0.5s ease;
   color: white;
 }
 .pill:active {
   background: white;
-  color: #3a83ff;
+  color: #003aff;
 }
 
 .jumbotron {
@@ -174,6 +227,12 @@ img {
 }
 .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
   color: white;
+}
+
+.link {
+  display: block;
+  text-decoration: underline black 2px;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
