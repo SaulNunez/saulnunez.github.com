@@ -44,7 +44,7 @@ $secondaryColor: #ffc500;
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #0066cc;
+  --link-color: #003aff;
   --card-background: #f9f9f9;
   --card-border: #ddd;
 }
@@ -53,7 +53,7 @@ $secondaryColor: #ffc500;
   :root {
     --background-color: #121212;
     --text-color: #e0e0e0;
-    --link-color: #80cbc4;
+    --link-color: #ffc500;
     --card-background: #1c1c1c;
     --card-border: #333;
   }
@@ -162,7 +162,6 @@ img {
     align-items: center;
     gap: 4px;
     font-size: 0.8em;
-    padding: 16px;
 
     & > li {
         color:white;
@@ -172,7 +171,7 @@ img {
     & > li > p {
         padding: 4px;
         margin: 0;
-        color: var(--text-color);;
+        color: var(--text-color);
     }
 }
 
@@ -315,10 +314,15 @@ img {
     > :not(.cover) {
         margin-left: 16px;
         margin-right: 16px;
+        padding-top: 8px;
     }
 
     > :last-child {
         margin-bottom: 16px;
+    }
+
+    .link {
+        font-size:1.4em;
     }
 }
 
