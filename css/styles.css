@@ -180,20 +180,21 @@ nav > a:active {
   color: #ffc500;
 }
 
-.detail_pills {
+ul.detail_pills {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  flex-wrap: wrap;
   align-items: center;
   gap: 4px;
   font-size: 0.8em;
 }
-.detail_pills > li {
+ul.detail_pills > li {
   color: white;
   border-radius: 12px;
   border: 1px solid #ffc500;
 }
-.detail_pills > li > p {
+ul.detail_pills > li > p {
   padding: 4px;
   margin: 0;
   color: var(--text-color);
@@ -329,6 +330,12 @@ nav > a:active {
   background-color: var(--card-background);
   border: 1px solid var(--card-border);
   margin-bottom: 16px;
+}
+.project .cover {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: auto;
 }
 .project > :not(.cover) {
   margin-left: 16px;
