@@ -8,31 +8,57 @@
 
 /* link underlines tend to make hypertext less readable, 
    because underlines obscure the shapes of the lower halves of words */
-   :link,:visited { text-decoration:none }
+:link,
+:visited {
+    text-decoration: none
+}
 
-   /* no list-markers by default, since lists are used more often for semantics */
-   ul,ol { list-style:none }
-   
-   /* avoid browser default inconsistent heading font-sizes */
-   /* and pre/code too */
-   h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
-   
-   /* remove the inconsistent (among browsers) default ul,ol padding or margin  */
-   /* the default spacing on headings does not match nor align with 
+/* no list-markers by default, since lists are used more often for semantics */
+ul,
+ol {
+    list-style: none
+}
+
+/* remove the inconsistent (among browsers) default ul,ol padding or margin  */
+/* the default spacing on headings does not match nor align with 
       normal interline spacing at all, so let's get rid of it. */
-   /* zero out the spacing around pre, form, body, html, p, blockquote as well */
-   /* form elements are oddly inconsistent, and not quite CSS emulatable. */
-   /*  nonetheless strip their margin and padding as well */
-   ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
-   { margin:0; padding:0 }
-   
-   /* whoever thought blue linked image borders were a good idea? */
-   a img,:link img,:visited img { border:none }
-   
-   /* de-italicize address */
-   address { font-style:normal }
-   
-   /* more varnish stripping as necessary... */
+/* zero out the spacing around pre, form, body, html, p, blockquote as well */
+/* form elements are oddly inconsistent, and not quite CSS emulatable. */
+/*  nonetheless strip their margin and padding as well */
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+body,
+html,
+p,
+blockquote,
+fieldset,
+input {
+    margin: 0;
+    padding: 0
+}
+
+/* whoever thought blue linked image borders were a good idea? */
+a img,
+:link img,
+:visited img {
+    border: none
+}
+
+/* de-italicize address */
+address {
+    font-style: normal
+}
+
+/* more varnish stripping as necessary... */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
@@ -42,25 +68,35 @@ $deepPrimary: #1b0883;
 $secondaryColor: #ffc500;
 
 :root {
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #003aff;
-  --card-background: #f9f9f9;
-  --card-border: #ddd;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #003aff;
+    --card-background: #f9f9f9;
+    --card-border: #ddd;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-    --link-color: #ffc500;
-    --card-background: #1c1c1c;
-    --card-border: #333;
-  }
+    :root {
+        --background-color: #121212;
+        --text-color: #e0e0e0;
+        --link-color: #ffc500;
+        --card-background: #1c1c1c;
+        --card-border: #333;
+    }
+}
+
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%; /* allow full width on mobile */
 }
 
 body {
-    
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
     background-color: var(--background-color);
     color: var(--text-color);
 
@@ -73,52 +109,57 @@ a {
 }
 
 // https://shapeshed.com/default-styles-for-css/
-h1 { 
-    font-size: 2.2em; 
-} 
-     
-h2 { 
-    font-size: 2.0em;     
-} 
-     
-h3 { 
-    font-size: 1.8em; 
-} 
-     
-h4 { 
-    font-size: 1.6em;     
-} 
-     
-h5 { 
-    font-size: 1.4em;     
-} 
-     
-p { 
-    font-size: 1.2em;     
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 // Titles in Bebas Neue
-h1, h2, h3, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 600;
     color: $primaryColor;
     padding-top: 16px;
     padding-bottom: 16px;
     text-transform: uppercase;
-    
-    ::selection{
+
+    ::selection {
         background: $secondaryColor;
     }
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    max-height: 15cm;
+img.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
-.nav {
+
+nav {
     height: 4rem;
     background-color: $deepPrimary;
     display: flex;
@@ -132,8 +173,8 @@ img {
     p {
         color: $secondaryColor;
     }
-    
-    & > a {
+
+    &>a {
         border-radius: 2px;
         color: white;
         text-decoration: none;
@@ -143,13 +184,13 @@ img {
         text-align: center;
     }
 
-    & > a:hover {
+    &>a:hover {
         background: $secondaryColor;
         animation: buttonColor 0.1s ease;
-        color:white;
+        color: white;
     }
 
-    & > a:active {
+    &>a:active {
         background: white;
         color: $secondaryColor;
     }
@@ -163,12 +204,13 @@ img {
     gap: 4px;
     font-size: 0.8em;
 
-    & > li {
-        color:white;
+    &>li {
+        color: white;
         border-radius: 12px;
         border: 1px solid $secondaryColor;
     }
-    & > li > p {
+
+    &>li>p {
         padding: 4px;
         margin: 0;
         color: var(--text-color);
@@ -177,14 +219,15 @@ img {
 
 @keyframes buttonColor {
     0% {
-      background-color: transparent;
+        background-color: transparent;
     }
-    100% {
-      background-color: $primaryColor;
-    }
-  }
 
-@media only screen and (max-width: 600px){
+    100% {
+        background-color: $primaryColor;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .nav {
         height: auto;
         display: flex;
@@ -196,13 +239,13 @@ img {
             text-align: center;
         }
 
-        & > a {
+        &>a {
             border-radius: 2px;
             color: white;
             text-decoration: none;
             margin: 0.25rem;
             padding: 0.25rem;
-            white-space: nowrap; 
+            white-space: nowrap;
         }
     }
 }
@@ -235,9 +278,9 @@ img {
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     .content {
-       margin: 16px; 
+        margin: 16px;
     }
 }
 
@@ -268,10 +311,16 @@ img {
     padding-bottom: 4em;
     padding-top: 8em;
 
-    h1, h2, h3, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: white;
     }
-    
+
     a {
         color: $secondaryColor;
     }
@@ -322,9 +371,16 @@ img {
     }
 
     .link {
-        font-size:1.4em;
+        font-size: 1.4em;
     }
 }
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
 
 .link {
     text-decoration: underline var(--link-color) 2px;
@@ -342,4 +398,32 @@ img {
 
 .content-padded {
     margin-top: 64px;
+}
+
+
+/* Medium / Tablet upwards */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav .menu-items {
+    /* maybe display inline rather than inside hamburger */
+  }
+}
+
+/* Desktop / Large screens */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header-text {
+    font-size: 2rem;
+  }
 }
