@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Saúl Núñez Castruita</title>
+    <meta name="description" content="Personal website of Saúl Núñez Castruita, software engineer.">
+    <meta name="author" content="Saúl Núñez Castruita">
+
+    <link rel="stylesheet" href="/css/styles.css?v=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2TS2Y3X7S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2TS2Y3X7S');
+    </script>
+</head>
+
+<body>
+    <nav>
+        <p>Saúl Núñez Castruita</p>
+        <a href="https://dev.to/saul_nunez" target="_blank" rel="noopener noreferrer"><iconify-icon
+                icon="mdi:blog"></iconify-icon> Blog</a>
+        <a href="/#proyects"><iconify-icon icon="mdi:code"></iconify-icon> Projects</a>
+        <a href="/#skills"><iconify-icon icon="mdi:brain"></iconify-icon> Skills</a>
+    </nav>
+    <div class="container">
+        <div class="center_flex">
+            <img class="phone-screenshot" src="/img/Screenshot_1609802712.png" alt="Screenshot ChessLocker" />
+        </div>
+        <div>
+            <h1>ChessLock</h1>
+            <p><i>Sheldrybox, comissioned by client</i></p>
+            <br>
+            <p class="project-description">A custom lockscreen for Android. Rather than a boring lock pattern, you can
+                unlock your phone by repeating a famous play, among others.</p>
+            <br>
+            <p><b>Languages and technologies: Kotlin</b></p>
+            <p>The main challange in this project was having to reimplement security measures already done by Android.
+                Some examples are, showing the lockscreen when turning the screen on, as well as making sure the phone
+                app and alarms were visible when a call was ringing or an alarm is active.
+                There a few of these apps on the Play Store, but there no documentation online on how they work, as
+                such, most of this work was done by experimentation.</p>
+            <br>
+            <blockquote data-package-name="com.sheldrybox.chesslocker" data-language="en" class="apkpure-app-card">
+            </blockquote>
+
+            <script async charset="utf-8"
+                src="https://static.apkpure.com/www/static/script/plugins/appCard-1.0.0.min.js">
+                </script>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>Saúl Núñez Castruita © <span id="year"></span></p>
+    </footer>
+</body>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<script>
+    var year_copyright = document.getElementById("year");
+    window.addEventListener("load", set_year);
+    function set_year() {
+        var currentYear = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(new Date());
+        year_copyright.innerText = currentYear;
+    }
+</script>
+
+</html>

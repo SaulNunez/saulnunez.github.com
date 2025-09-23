@@ -157,8 +157,8 @@ nav {
   gap: 16px;
   padding-left: 16px;
   padding-right: 16px;
-  position: sticky; /* Makes the header sticky */
-  top: 0; /* Sticks to the top of the viewport */
+  position: sticky;
+  top: 0;
 }
 nav p {
   color: #ffc500;
@@ -397,6 +397,10 @@ ul.detail_pills > li > p {
   .header-text {
     font-size: 2rem;
   }
+}
+.phone-screenshot {
+  max-height: 800px;
+  width: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
