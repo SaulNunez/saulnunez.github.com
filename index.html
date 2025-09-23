@@ -331,8 +331,44 @@
                     PowerPoint, Access, Visio, VBA Macros), Trello, Wireshark, Trace32, Git, Plastic SCM.</p>
             </div>
         </div>
+
+        <h1>Hobbies</h1>
+    <h2>Reading</h2>
+    <p>I'm an avid reader. 
+        My favorite genre is science fiction, I've read most of the works by Isacc Asimov and quite a lot of Jules Verne. 
+        Currently I'm working my way through The Expanse book series.
+        I'm also a fan of books about history, my favorites are Ruth Goodman books about the life of regular folk in different epochs of british history and 
+        Amy Shira Teitel books, Breaking the Chains of Gravity about the start of the field of rocketry and the foundations of American spaceflight and Fighting for Space, which talks about the participation of women in the start of women airplane pilots and their fight to be women autronauts.
+    </p>
+    <h2>Playing Guitar</h2>
+    <p>Since Middle School I've been playing music with my electric guitar. 
+        I'm not particularly the best in knowing how to play a song on the guitar, I like to learn sections of songs that pique my interest.
+        I know some ranging from videogame soundtracks, classic rock licks, a few classical music pieces, to modern songs.</p>
+    <h2>Photography</h2>
+    <p>I started my photography journey while in High School. One of my favorite things is to photograph nature.</p>
+    <h2>Racing</h2>
+    <p>During the free time in the weekends you can catch me watching anything with an engine that can be raced, ranging from Formula 1, Indycar, Nascar, Trucks, Formula E, Touring Car racing in any of the 6 continents.
+        Especially if it's of the endurance variety. 
+        My favorite days of the year are the day of the Le Mans 24 hours and the day of the Nurburgring 24 hours.</p>
+    <h2>Sim-Racing</h2>
+    <p>While watching racing is great, nothing beats one being in the (virtual) car. 
+        I have a pedal and wheel set, and I use them to drive around different famous racing circuits around the world. 
+        Sometimes, I'd be driving carefree on the Nurburgring Nordschleife. 
+        Sometimes I'd grab a GT3 touring car and rip around Monza trying to better my best time.
+    </p>
     </div>
+    
+    <footer>
+        <p>Saúl Núñez Castruita © <span id="year"></span></p>
+    </footer>
 </body>
 <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
-
+<script>
+    var year_copyright = document.getElementById("year");
+    window.addEventListener("load", set_year);
+    function set_year() {
+        var currentYear = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(new Date());
+        year_copyright.innerText = currentYear;
+    }
+</script>
 </html>
