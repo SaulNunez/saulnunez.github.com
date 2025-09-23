@@ -74,6 +74,12 @@ address {
     --card-border: #333;
   }
 }
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%; /* allow full width on mobile */
+}
+
 body {
   font-size: 1rem;
   line-height: 1.5;
@@ -191,6 +197,8 @@ nav > a:active {
   padding: 4px;
   margin: 0;
   color: var(--text-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @keyframes buttonColor {
