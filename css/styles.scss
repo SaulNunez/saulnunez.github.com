@@ -86,9 +86,10 @@ $secondaryColor: #ffc500;
 }
 
 .container {
-  padding: 1rem;
-  width: 100%;
-  max-width: 100%; /* allow full width on mobile */
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    /* allow full width on mobile */
 }
 
 body {
@@ -100,8 +101,12 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 
-    //Poppins para texto normal
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 a {
@@ -141,12 +146,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     color: $primaryColor;
     padding-top: 16px;
     padding-bottom: 16px;
-    text-transform: uppercase;
 
     ::selection {
         background: $secondaryColor;
@@ -154,8 +159,8 @@ h6 {
 }
 
 img.responsive {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -171,7 +176,7 @@ nav {
     padding-right: 16px;
 
     // Sticky header
-    position: sticky; 
+    position: sticky;
     top: 0;
 
     p {
@@ -390,9 +395,9 @@ ul.detail_pills {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
 
 
@@ -417,29 +422,33 @@ ul.detail_pills {
 
 /* Medium / Tablet upwards */
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  nav .menu-items {
-    /* maybe display inline rather than inside hamburger */
-  }
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav .menu-items {
+        /* maybe display inline rather than inside hamburger */
+    }
 }
 
 /* Desktop / Large screens */
 @media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  }
-  .project-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .header-text {
-    font-size: 2rem;
-  }
+    .container {
+        max-width: 960px;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header-text {
+        font-size: 2rem;
+    }
 }
 
 .phone-screenshot {
