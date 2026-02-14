@@ -415,4 +415,12 @@ ul.detail_pills > li > p {
   width: auto;
 }
 
+footer {
+  background-color: #1b0883;
+  margin-top: 4rem;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
