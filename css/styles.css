@@ -172,7 +172,7 @@ nav {
   position: sticky;
   top: 0;
 }
-nav p {
+nav > .brand {
   color: #ffc500;
 }
 nav > a {

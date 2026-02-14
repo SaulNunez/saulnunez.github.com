@@ -186,7 +186,7 @@ nav {
     position: sticky;
     top: 0;
 
-    p {
+    &>.brand {
         color: $secondaryColor;
     }
 
