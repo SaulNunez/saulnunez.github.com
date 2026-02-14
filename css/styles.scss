@@ -73,12 +73,14 @@ $secondaryColor: #ffc500;
     --link-color: #003aff;
     --card-background: #f9f9f9;
     --card-border: #ddd;
+    --header-color: #003aff;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #121212;
         --text-color: #e0e0e0;
+        --header-color: #ffffff;
         --link-color: #ffc500;
         --card-background: #1c1c1c;
         --card-border: #333;
@@ -149,7 +151,7 @@ h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-    color: $primaryColor;
+    color: var(--header-color);
     padding-top: 16px;
     padding-bottom: 16px;
 
