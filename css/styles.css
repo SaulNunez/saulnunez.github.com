@@ -178,7 +178,6 @@ nav > .brand {
   color: #ffc500;
 }
 nav > a {
-  border-radius: 2px;
   color: white;
   text-decoration: none;
   margin: 0.25rem;
@@ -187,13 +186,15 @@ nav > a {
   text-align: center;
 }
 nav > a:hover {
-  background: #ffc500;
-  animation: buttonColor 0.1s ease;
-  color: white;
+  background: transparent;
+  color: #ffc500;
+  text-decoration: underline;
+  text-decoration-color: #ffc500;
+  text-decoration-thickness: 2px;
 }
 nav > a:active {
-  background: white;
-  color: #ffc500;
+  background: #ffc500;
+  color: black;
 }
 
 ul.detail_pills {

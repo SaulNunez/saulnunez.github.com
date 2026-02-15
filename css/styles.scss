@@ -193,7 +193,6 @@ nav {
     }
 
     &>a {
-        border-radius: 2px;
         color: white;
         text-decoration: none;
         margin: 0.25rem;
@@ -203,14 +202,16 @@ nav {
     }
 
     &>a:hover {
-        background: $secondaryColor;
-        animation: buttonColor 0.1s ease;
-        color: white;
+        background: transparent;
+        color: $secondaryColor;
+        text-decoration: underline;
+        text-decoration-color: $secondaryColor;
+        text-decoration-thickness: 2px;
     }
 
     &>a:active {
-        background: white;
-        color: $secondaryColor;
+        background: $secondaryColor;
+        color: black;
     }
 }
 
