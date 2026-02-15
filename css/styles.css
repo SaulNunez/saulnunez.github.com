@@ -184,13 +184,12 @@ nav > a {
   padding: 0.25rem;
   white-space: nowrap;
   text-align: center;
+  border-bottom: 2px solid transparent;
 }
 nav > a:hover {
   background: transparent;
   color: #ffc500;
-  text-decoration: underline;
-  text-decoration-color: #ffc500;
-  text-decoration-thickness: 2px;
+  border-bottom-color: #ffc500;
 }
 nav > a:active {
   background: #ffc500;

@@ -199,14 +199,13 @@ nav {
         padding: 0.25rem;
         white-space: nowrap;
         text-align: center;
+        border-bottom: 2px solid transparent;
     }
 
     &>a:hover {
         background: transparent;
         color: $secondaryColor;
-        text-decoration: underline;
-        text-decoration-color: $secondaryColor;
-        text-decoration-thickness: 2px;
+        border-bottom-color: $secondaryColor;
     }
 
     &>a:active {
