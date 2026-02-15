@@ -61,6 +61,7 @@ address {
   --background-color: #ffffff;
   --text-color: #000000;
   --link-color: #003aff;
+  --text-link-hover-color: #ffffff;
   --card-background: #f9f9f9;
   --card-border: #ddd;
   --header-color: #003aff;
@@ -72,6 +73,7 @@ address {
     --text-color: #e0e0e0;
     --header-color: #ffffff;
     --link-color: #ffc500;
+    --text-link-hover-color: #000000;
     --card-background: #1c1c1c;
     --card-border: #333;
   }
@@ -372,10 +374,13 @@ ul.detail_pills > li > p {
 .link {
   text-decoration: underline var(--link-color) 2px;
   color: var(--link-color);
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .link:hover {
   background: #ffc500;
   animation: background 0.5s ease;
+  color: var(--text-link-hover-color);
 }
 .link:active {
   background: #ffc500;
